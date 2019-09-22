@@ -78,8 +78,10 @@ GEM
       xpath (~> 3.2)
     childprocess (2.0.0)
       rake (< 13.0)
+    coderay (1.1.2)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
+    database_cleaner (1.7.0)
     debitcredit (0.2.0)
       docile
       rails (>= 4.0.4)
@@ -131,6 +133,11 @@ GEM
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     pg (1.1.4)
+    pry (0.12.2)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    pry-nav (0.3.0)
+      pry (>= 0.9.10, < 0.13.0)
     public_suffix (4.0.1)
     puma (3.12.1)
     rack (2.0.7)
@@ -232,10 +239,12 @@ DEPENDENCIES
   borutus
   byebug
   capybara (>= 2.15)
+  database_cleaner
   debitcredit
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
   pg
+  pry-nav
   puma (~> 3.11)
   rails (~> 6.0.0)
   sass-rails (~> 5)

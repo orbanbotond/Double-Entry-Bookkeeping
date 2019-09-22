@@ -1,7 +1,7 @@
 # This migration comes from debitcredit (originally 20140121181326)
 class CreateDebitcreditItems < ActiveRecord::Migration[6.0]
   def change
-    create_table :debitcredit_items do |t|
+    create_table :borutus_items do |t|
       t.references :transaction, null: false
       t.references :account,     null: false
       t.boolean    :debit,       null: false
