@@ -10,7 +10,5 @@ class CreateDebitcreditItems < ActiveRecord::Migration[6.0]
       t.decimal    :balance,     null: false, precision: 20, scale: 2, default: 0
       t.timestamps
     end
-    add_index :debitcredit_items, :account_id
-    add_index :debitcredit_items, :transaction_id
   end
 end
