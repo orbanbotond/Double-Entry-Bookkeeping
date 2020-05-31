@@ -34,8 +34,8 @@ gem 'jquery-ui-rails'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
-gem 'borutus'
-gem 'debitcredit'
+gem 'borutus', git: 'https://github.com/orbanbotond/borutus', branch: 'patch-1'
+# gem 'debitcredit'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
